@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-800: #1a2332;
+  --color-navy-900: #0f172a;
+  --color-navy-950: #020617;
+
+  --color-champagne-100: #fcf6e3;
+  --color-champagne-200: #f9edc6;
+  --color-champagne-300: #f5e2a3;
+  --color-champagne-400: #edd170;
+  --color-champagne-500: #d4af37;
+  --color-champagne-600: #b88f28;
+
+  --color-charcoal-50: #f8fafc;
+  --color-charcoal-100: #f1f5f9;
+  --color-charcoal-200: #e2e8f0;
+  --color-charcoal-300: #cbd5e1;
+  --color-charcoal-400: #94a3b8;
+  --color-charcoal-500: #64748b;
+  --color-charcoal-600: #475569;
+  --color-charcoal-700: #334155;
+  --color-charcoal-800: #1e293b;
+  --color-charcoal-900: #0f172a;
+
+  --color-primary: #d4af37;
+  --color-accent: #0f172a;
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .glass-nav {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+  }
+  .smooth-image {
+    border-radius: 1rem;
+  }
+  .thin-border {
+    border-width: 0.5px;
+  }
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      column-count: 4;
+    }
+  }
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  @keyframes scroll-up {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20%); }
+  }
+  @keyframes scroll-down {
+    0% { transform: translateY(-20%); }
+    100% { transform: translateY(0); }
+  }
+  .animate-scroll-up {
+    animation: scroll-up 20s linear infinite alternate;
+  }
+  .animate-scroll-down {
+    animation: scroll-down 20s linear infinite alternate;
+  }
+}
