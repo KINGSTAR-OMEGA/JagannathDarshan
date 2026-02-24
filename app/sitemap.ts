@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.90,
         },
         {
+            url: 'https://www.jagannathdarshan.in/custom-booking',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.90,
+        },
+        {
             url: 'https://www.jagannathdarshan.in/about',
             lastModified: new Date(),
             changeFrequency: 'monthly',

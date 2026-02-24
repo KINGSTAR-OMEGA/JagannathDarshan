@@ -8,6 +8,26 @@ const nextConfig: NextConfig = {
         hostname: 'lh3.googleusercontent.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'imgd.aeplcdn.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd6xcmfyh68wv8.cloudfront.net',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '5.imimg.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/**',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
   },
