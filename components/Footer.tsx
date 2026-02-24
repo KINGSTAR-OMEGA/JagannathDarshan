@@ -35,18 +35,19 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-navy-900 text-sm mb-4">Links</h3>
                         <ul className="space-y-3 text-xs text-charcoal-500">
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#">Home</a></li>
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#packages">Packages</a></li>
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#pricing">Pricing</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/">Home</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/#packages">Packages</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/#pricing">Pricing</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/about">About Us</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold text-navy-900 text-sm mb-4">Destinations</h3>
                         <ul className="space-y-3 text-xs text-charcoal-500">
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#">Puri</a></li>
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#">Konark</a></li>
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#">Chilika</a></li>
-                            <li><a className="hover:text-champagne-600 transition-colors" href="#">Bhubaneswar</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/puri-darshan-tour">Puri Darshan Tour</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/konark-sun-temple-tour">Konark Sun Temple</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/chilika-lake-trip">Chilika Lake Trip</a></li>
+                            <li><a className="hover:text-champagne-600 transition-colors" href="/bhubaneswar-sightseeing">Bhubaneswar Tour</a></li>
                         </ul>
                     </div>
                     <div>
@@ -60,11 +61,19 @@ export default function Footer() {
                                 <span className="material-symbols-outlined text-xs">mail</span>
                                 <a href="mailto:book@jagannath.com" className="hover:text-champagne-600 transition-colors">book@jagannath.com</a>
                             </li>
+                            <li className="flex items-center gap-2">
+                                <span className="material-symbols-outlined text-xs">location_on</span>
+                                <span>Puri, Odisha — 752001</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div className="mt-16 text-center text-[10px] text-charcoal-400 uppercase tracking-widest">
-                    © 2026 Jagannath Darshan Tours. All rights reserved.
+                <div className="mt-12 pt-8 border-t border-charcoal-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-charcoal-400 uppercase tracking-widest">
+                    <span>© 2026 Jagannath Darshan Tours. All rights reserved.</span>
+                    <nav aria-label="Legal links" className="flex gap-6">
+                        <a href="/about" className="hover:text-champagne-600 transition-colors">About Us</a>
+                        <span>Puri, Odisha, India</span>
+                    </nav>
                 </div>
             </div>
         </footer>

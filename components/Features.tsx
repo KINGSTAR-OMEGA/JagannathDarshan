@@ -20,11 +20,13 @@ const Features: React.FC = () => {
                     {/* Card 1 — Premium Sedan, white, tilted slightly left */}
                     <div className="w-full lg:w-[90%] lg:self-start bg-white rounded-[1.6rem] shadow-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1"
                         style={{ transform: 'rotate(-3deg) translateX(0px)' }}>
-                        <div className="w-full h-52 overflow-hidden">
-                            <img
+                        <div className="w-full h-52 overflow-hidden relative">
+                            <Image
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgMgiDZ0K6cPYYZvTB3GfkxgO8y3t5YEemuKxhJgDB4zsWPc_jbeBiEowXXu7DcK3rpwFJOOQd6CpQ7IEACJ7LTrSxUkiEpmCPro-1RZk9RVZgO8O-41OuXmoqW9J590cEyoMPncvDvbLk61G4w85s1DXD_2QzCaQF1vN5W9kRSX_0Cf9hb3fVhPmwTvjsyAWwpE7Ti8o7vG7V82SSrYwCmdSZEnCZT4GhujIs2IFRqsm8wbx9wF3iSwckU52e62O267wV2Dc7Aw"
-                                alt="Premium Sedan Dzire Etios for Puri Yatra"
-                                className="w-full h-full object-cover"
+                                alt="Premium Sedan Dzire Etios — Jagannath Darshan Puri Yatra cab"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                         <div className="px-6 py-4 flex justify-between items-center">
@@ -39,11 +41,13 @@ const Features: React.FC = () => {
                     {/* Card 2 — Luxury SUV, dark, tilted slightly right, offset right */}
                     <div className="w-full lg:w-[90%] lg:self-end bg-navy-900 rounded-[1.6rem] shadow-2xl overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1"
                         style={{ transform: 'rotate(2.5deg) translateX(0px)' }}>
-                        <div className="w-full h-52 overflow-hidden">
-                            <img
+                        <div className="w-full h-52 overflow-hidden relative">
+                            <Image
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3g5yqM2LdQhdy3_J4X3qR2GsaQpZ-EQC4o1hrzUbsI2y_9Xs06cRezZgQfcUiAG8KwJJvw-OHstUc5k-ygMppgTR9s0mjNdoSd3l_DfAKg2SF3h_VE4uCssPgi-qnaoGDKvUrwy3MkBLjOP50Hue2-_BLYt1XPPXeSDst5ZK-RCTftnz-rw0QXNMo5QZs6e5tUEv755TOhmeVdi5VDwS9MtSXYbZzZM_AENTyuKb1oGQ7z7zzGpTY3ngiq6Gw6s9oSA_pOXN2qw"
-                                alt="Innova Crysta Luxury SUV for Odisha pilgrimage"
-                                className="w-full h-full object-cover opacity-90"
+                                alt="Innova Crysta Luxury SUV — Odisha pilgrimage tour cab"
+                                fill
+                                className="object-cover opacity-90"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                         <div className="px-6 py-4 flex justify-between items-center">

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import WebHero from '@/public/Web_Hero.png';
-import MobHero from '@/public/Mob_Hero.png';
+import WebHero from '@/public/Web_Hero.webp';
+import MobHero from '@/public/Mob_Hero.webp';
 
 export default function Hero() {
     return (
