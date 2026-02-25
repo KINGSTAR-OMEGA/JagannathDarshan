@@ -90,7 +90,7 @@ export default function Gallery() {
                         <div className="bg-champagne-100 p-8 h-full flex flex-col justify-center text-left min-h-[200px]">
                             <h3 className="text-navy-900 font-serif text-xl font-bold mb-2">Share Your Story</h3>
                             <p className="text-charcoal-600 text-xs mb-4">Tag us #JagannathDarshan2026 to be featured.</p>
-                            <span className="text-navy-900 text-xs font-bold underline cursor-pointer">Upload Photo</span>
+                  
                         </div>
                     </div>
                     <div className="masonry-item relative group overflow-hidden rounded-2xl">
