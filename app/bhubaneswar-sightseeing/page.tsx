@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.jagannathdarshan.in'),
     title: 'Bhubaneswar Sightseeing Tour Package | Temples & Caves | Jagannath Darshan',
     description:
-        'Explore Bhubaneswar — the Temple City of India. Visit Lingaraj Temple, Dhauli Shanti Stupa, Khandagiri & Udayagiri Caves, and Nandankanan Zoo. Premium AC cab. Starting ₹1,500.',
+        'Explore Bhubaneswar — the Temple City of India. Visit Lingaraj Temple, Dhauli Shanti Stupa, Khandagiri & Udayagiri Caves, and Nandankanan Zoo. Premium AC cab, experienced driver. Call or WhatsApp for best rates.',
     keywords: [
         'Bhubaneswar sightseeing tour',
         'Lingaraj Temple tour Bhubaneswar',
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: 'https://www.jagannathdarshan.in/bhubaneswar-sightseeing',
         siteName: 'Jagannath Darshan Tours',
         title: 'Bhubaneswar Sightseeing Tour | Temple City of India',
-        description: 'Lingaraj Temple, Dhauli Stupa, Khandagiri Caves, Udayagiri, Nandankanan Zoo — complete Bhubaneswar tour. Starting ₹1,500.',
+        description: 'Lingaraj Temple, Dhauli Stupa, Khandagiri Caves, Udayagiri, Nandankanan Zoo — complete Bhubaneswar tour. Call or WhatsApp for best rates.',
         images: [{ url: '/Web_Hero.webp', width: 1200, height: 630, alt: 'Bhubaneswar Temple City Sightseeing Tour' }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Bhubaneswar Sightseeing | Temple City Tour | Starting ₹1,500',
-        description: 'Lingaraj Temple, Khandagiri Caves, Dhauli Stupa & more. Premium cab sightseeing in Bhubaneswar.',
+        title: 'Bhubaneswar Sightseeing | Temple City Tour',
+        description: 'Lingaraj Temple, Khandagiri Caves, Dhauli Stupa & more. Premium cab sightseeing in Bhubaneswar. Call or WhatsApp for rates.',
         images: ['/Web_Hero.webp'],
     },
 };
@@ -62,8 +62,8 @@ const jsonLd = {
             provider: { '@id': 'https://www.jagannathdarshan.in/#organization' },
             touristType: 'Heritage Lovers, History Enthusiasts, Families, Pilgrims',
             offers: [
-                { '@type': 'Offer', name: 'Bhubaneswar Sightseeing (Sedan)', price: '1500', priceCurrency: 'INR', description: '8 hours city tour in premium AC sedan' },
-                { '@type': 'Offer', name: 'Bhubaneswar Sightseeing (Innova Crysta)', price: '2500', priceCurrency: 'INR', description: '8 hours city tour in luxury AC SUV' },
+                { '@type': 'Offer', name: 'Bhubaneswar Sightseeing (Sedan)', description: '8 hours city tour in premium AC sedan with experienced driver' },
+                { '@type': 'Offer', name: 'Bhubaneswar Sightseeing (Innova Crysta)', description: '8 hours city tour in luxury AC SUV with experienced driver' },
             ],
         },
         {
@@ -77,7 +77,7 @@ const jsonLd = {
                 {
                     '@type': 'Question',
                     name: 'How much does a Bhubaneswar sightseeing tour cost?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Bhubaneswar city sightseeing starts at ₹1,500 per sedan (Dzire/Etios) for 8 hours. Innova Crysta (up to 6 passengers) is available at ₹2,500. Prices include all major sightseeing spots and a comfortable AC vehicle.' },
+                    acceptedAnswer: { '@type': 'Answer', text: 'Please call or WhatsApp us for the latest pricing on Bhubaneswar city sightseeing. We offer premium sedan and luxury SUV (Innova Crysta) options for up to 8 hours, covering all major sightseeing spots in a comfortable AC vehicle. Our team will share personalised rates based on your travel dates and group size.' },
                 },
                 {
                     '@type': 'Question',
@@ -104,13 +104,13 @@ const highlights = [
 ];
 
 const itinerary = [
-    { time: '08:00', label: 'Start', title: 'Begin City Tour — Lingaraj Temple', desc: 'Start early at the magnificent 11th-century Lingaraj Temple. Hindu devotees can enter for darshan, while others view from the viewing platform provided by the temple authority.' },
-    { time: '10:00', label: 'Caves', title: 'Udayagiri & Khandagiri Caves', desc: 'Explore the 2000-year-old Jain rock-cut caves built by King Kharavela. Climb the twin hills for a panoramic view of the city. History comes alive here.' },
-    { time: '11:30', label: 'Peace', title: 'Dhauli Shanti Stupa', desc: 'Visit the iconic white Japanese Peace Pagoda on the banks of the Daya River — the site of the historic Kalinga War that transformed Emperor Ashoka.' },
-    { time: '13:00', label: 'Lunch', title: 'Lunch at Bhubaneswar', desc: 'Enjoy Odia cuisine at a well-rated local restaurant — dal baati, pakhala, chhena poda, and more authentic Odisha flavors.' },
-    { time: '14:30', label: 'Temple', title: 'Rajarani Temple & Tank', desc: 'Visit the ornate Rajarani Temple — famed for its sculpted couples and intricate sandstone architecture. Also visit the sacred Bindu Sagar Tank.' },
-    { time: '16:00', label: 'Zoo', title: 'Nandankanan Zoological Park', desc: 'End your day at one of India\'s most beautiful zoos. See white tigers, gharials, and exotic wildlife in a stunning forested setting.' },
-    { time: '18:00', label: 'End', title: 'Drop at Hotel', desc: 'Return comfortably to your Bhubaneswar hotel with a day full of temples, history, nature, and culture.' },
+    { label: 'Start', title: 'Begin City Tour — Lingaraj Temple', desc: 'Start early at the magnificent 11th-century Lingaraj Temple. Hindu devotees can enter for darshan, while others view from the viewing platform provided by the temple authority.' },
+    { label: 'Caves', title: 'Udayagiri & Khandagiri Caves', desc: 'Explore the 2000-year-old Jain rock-cut caves built by King Kharavela. Climb the twin hills for a panoramic view of the city. History comes alive here.' },
+    { label: 'Peace', title: 'Dhauli Shanti Stupa', desc: 'Visit the iconic white Japanese Peace Pagoda on the banks of the Daya River — the site of the historic Kalinga War that transformed Emperor Ashoka.' },
+    { label: 'Lunch', title: 'Lunch at Bhubaneswar', desc: 'Enjoy Odia cuisine at a well-rated local restaurant — dal baati, pakhala, chhena poda, and more authentic Odisha flavors.' },
+    { label: 'Temple', title: 'Rajarani Temple & Tank', desc: 'Visit the ornate Rajarani Temple — famed for its sculpted couples and intricate sandstone architecture. Also visit the sacred Bindu Sagar Tank.' },
+    { label: 'Zoo', title: 'Nandankanan Zoological Park', desc: 'End your day at one of India\'s most beautiful zoos. See white tigers, gharials, and exotic wildlife in a stunning forested setting.' },
+    { label: 'End', title: 'Drop at Hotel', desc: 'Return comfortably to your Bhubaneswar hotel with a day full of temples, history, nature, and culture.' },
 ];
 
 export default function BhubaneswarSightseeingPage() {
@@ -150,13 +150,19 @@ export default function BhubaneswarSightseeingPage() {
                             Over 600 ancient temples, rock-cut Jain caves, a world-peace pagoda, and one of India&apos;s finest zoos — Bhubaneswar is a city built on centuries of faith and culture.
                         </p>
                         <div className="flex flex-wrap gap-4 items-center">
-                            <a href="tel:+919876543210" className="px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest transition-colors shadow-xl text-white" style={{ backgroundColor: '#dc2626' }}>
-                                Book Now — ₹1,500
+                            <a href="tel:+919876543210" className="px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest transition-colors shadow-xl text-white flex items-center gap-2" style={{ backgroundColor: '#dc2626' }}>
+                                <span className="material-symbols-outlined text-sm">call</span>
+                                Call to Book
+                            </a>
+                            <a href="https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Bhubaneswar+Sightseeing+Tour.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-full border border-white/30 text-white text-xs font-bold uppercase tracking-widest hover:border-rose-400 hover:text-rose-300 transition-all flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm">chat</span>
+                                WhatsApp Us
                             </a>
                             <div className="flex items-center gap-6 text-white/60 text-xs">
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm" style={{ color: '#fda4af' }}>schedule</span> 8 Hours</span>
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm" style={{ color: '#fda4af' }}>temple_hindu</span> 600+ Temples</span>
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm" style={{ color: '#fda4af' }}>star</span> 4.9 Rating</span>
+                                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm" style={{ color: '#fda4af' }}>currency_rupee</span> Affordable Rates</span>
                             </div>
                         </div>
                     </div>
@@ -195,60 +201,62 @@ export default function BhubaneswarSightseeingPage() {
                             {itinerary.map((step, i) => (
                                 <div key={i} className="relative pl-12 group">
                                     <div className="absolute -left-[4px] top-2 h-4 w-4 rounded-full border group-hover:scale-125 transition-transform duration-300 z-10" style={{ backgroundColor: i % 2 === 0 ? 'white' : '#dc2626', borderColor: '#dc2626', boxShadow: '0 0 0 4px rgba(220,38,38,0.12)' }} />
-                                    <div className="flex flex-col md:flex-row gap-8 items-start">
-                                        <div className="md:w-24 flex-shrink-0 pt-1">
-                                            <time className="font-serif text-2xl text-navy-900 block">{step.time}</time>
-                                            <p className="text-[0.6rem] uppercase tracking-widest font-bold" style={{ color: '#dc2626' }}>{step.label}</p>
-                                        </div>
-                                        <div className="flex-1">
-                                            <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
-                                            <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
-                                        </div>
-                                    </div>
+                                    <p className="text-[0.6rem] uppercase tracking-widest font-bold mb-2" style={{ color: '#dc2626' }}>{step.label}</p>
+                                    <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
+                                    <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
 
-                {/* Pricing */}
+                {/* Book Your Tour */}
                 <section className="py-32 px-6 lg:px-12 bg-white">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-16">
-                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Transparent Pricing</h2>
-                            <p className="text-charcoal-500 font-light text-base">No hidden fees. Explore the Temple City in comfort.</p>
+                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Book Your Tour</h2>
+                            <p className="text-charcoal-500 font-light text-base">Choose your vehicle and contact us for a personalised quote.</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-rose-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group">
+                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-rose-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                                 <p className="text-[10px] text-charcoal-400 uppercase tracking-[0.2em] mb-1">Premium Sedan</p>
                                 <h3 className="text-2xl font-serif text-navy-900 mb-2">Dzire / Etios</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif text-navy-900">₹1,500</span>
-                                    <span className="text-charcoal-400 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600">
+                                <p className="text-sm font-semibold mb-8" style={{ color: '#dc2626' }}>Up to 4 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600 flex-grow">
                                     {['Up to 4 passengers', '8 Hours city tour', 'All major sightseeing spots', 'Premium AC cab', 'Experienced local driver'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#dc2626' }} />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl border border-navy-900/10 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 group-hover:bg-navy-900 group-hover:text-white transition-all text-center block">Select Plan</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-all text-center flex items-center justify-center gap-2" style={{ backgroundColor: '#dc2626' }}>
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Bhubaneswar+Sightseeing+Tour+in+a+Sedan.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-charcoal-200 text-xs font-bold uppercase tracking-[0.15em] text-charcoal-600 hover:border-rose-300 hover:text-navy-900 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                             <div className="p-10 rounded-[2rem] shadow-2xl relative flex flex-col border" style={{ backgroundColor: '#1c0a0a', borderColor: '#3f1515' }}>
                                 <div className="absolute top-6 right-6"><span className="material-symbols-outlined" style={{ color: '#fda4af' }}>star</span></div>
                                 <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: 'rgba(253,164,175,0.7)' }}>Luxury SUV</p>
                                 <h3 className="text-2xl font-serif text-white mb-2">Innova Crysta</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif" style={{ color: '#fda4af' }}>₹2,500</span>
-                                    <span className="text-white/40 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-white/80">
+                                <p className="text-sm font-semibold mb-8" style={{ color: '#fda4af' }}>Up to 6 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-white/80 flex-grow">
                                     {['Up to 6 passengers', '8 Hours city tour', 'All major sightseeing spots', 'Luxury AC SUV', 'Experienced driver-guide', 'Bottled water included'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#fda4af' }} />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-colors shadow-lg text-center block" style={{ backgroundColor: '#dc2626' }}>Reserve Now</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-colors shadow-lg text-center flex items-center justify-center gap-2" style={{ backgroundColor: '#dc2626' }}>
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Bhubaneswar+Sightseeing+Tour+in+an+Innova+Crysta.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-white/20 text-xs font-bold uppercase tracking-[0.15em] text-white/70 hover:border-rose-400 hover:text-rose-300 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <p className="text-center text-xs text-charcoal-400 mt-8 font-light">Call or WhatsApp us for the best rates. We respond within minutes.</p>
                     </div>
                 </section>
 
@@ -283,9 +291,9 @@ export default function BhubaneswarSightseeingPage() {
                         </div>
                         <div className="grid md:grid-cols-3 gap-5">
                             {[
-                                { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', sub: 'Jagannath Temple', price: '₹1,800', num: '01' },
-                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', price: '₹2,200', num: '02' },
-                                { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', sub: "Asia's Largest Lagoon", price: '₹3,199', num: '03' },
+                                { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', sub: 'Jagannath Temple', num: '01' },
+                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', num: '02' },
+                                { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', sub: "Asia's Largest Lagoon", num: '03' },
                             ].map((t) => (
                                 <a key={t.href} href={t.href}
                                     className="group relative flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-champagne-400/40 transition-all duration-400 overflow-hidden">
@@ -295,7 +303,7 @@ export default function BhubaneswarSightseeingPage() {
                                         <h3 className="text-white font-serif text-xl leading-snug">{t.label}</h3>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-white/50 text-xs font-light">From <span className="text-champagne-400 font-semibold">{t.price}</span></span>
+                                        <span className="text-white/40 text-xs font-light">Enquire for pricing</span>
                                         <span className="material-symbols-outlined text-white/30 group-hover:text-champagne-400 text-base transition-colors">arrow_forward</span>
                                     </div>
                                 </a>

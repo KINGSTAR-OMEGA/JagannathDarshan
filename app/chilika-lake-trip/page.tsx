@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.jagannathdarshan.in'),
     title: 'Chilika Lake Trip from Puri | Dolphin Sighting at Satapada | Jagannath Darshan',
     description:
-        'Book a Chilika Lake day trip from Puri to Satapada. See Irrawaddy dolphins, Sea Mouth, boat rides, and Kalijai Temple. Asia\'s largest brackish water lagoon. Starting ₹3,199.',
+        "Book a Chilika Lake day trip from Puri to Satapada. See Irrawaddy dolphins, Sea Mouth, boat rides, and Kalijai Temple. Asia's largest brackish water lagoon. Call or WhatsApp for best rates.",
     keywords: [
         'Chilika Lake trip from Puri',
         'Satapada dolphin sighting',
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: 'https://www.jagannathdarshan.in/chilika-lake-trip',
         siteName: 'Jagannath Darshan Tours',
         title: 'Chilika Lake Trip from Puri | Dolphin Sighting at Satapada',
-        description: 'Asia\'s largest brackish water lagoon. Irrawaddy dolphins, Sea Mouth, bird sanctuary & Kalijai Temple. Starting ₹3,199.',
+        description: "Asia's largest brackish water lagoon. Irrawaddy dolphins, Sea Mouth, bird sanctuary & Kalijai Temple. Call or WhatsApp for best rates.",
         images: [{ url: '/Web_Hero.webp', width: 1200, height: 630, alt: 'Chilika Lake Satapada Dolphin Trip Odisha' }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Chilika Lake Trip | Dolphin Sighting | Starting ₹3,199',
-        description: 'Asia\'s largest lagoon. See rare Irrawaddy dolphins, Sea Mouth & Kalijai Temple from Puri in one day.',
+        title: 'Chilika Lake Trip | Dolphin Sighting from Puri',
+        description: "Asia's largest lagoon. See rare Irrawaddy dolphins, Sea Mouth & Kalijai Temple from Puri in one day. Call or WhatsApp for rates.",
         images: ['/Web_Hero.webp'],
     },
 };
@@ -58,12 +58,12 @@ const jsonLd = {
         {
             '@type': 'TouristTrip',
             name: 'Chilika Lake Nature Trip — Satapada Dolphin Sighting',
-            description: 'Day trip from Puri to Satapada on Chilika Lake — Asia\'s largest brackish water lagoon. See rare Irrawaddy dolphins, the Sea Mouth where the lake meets the ocean, Kalijai Temple, and flamingos during winter.',
+            description: "Day trip from Puri to Satapada on Chilika Lake — Asia's largest brackish water lagoon. See rare Irrawaddy dolphins, the Sea Mouth where the lake meets the ocean, Kalijai Temple, and flamingos during winter.",
             provider: { '@id': 'https://www.jagannathdarshan.in/#organization' },
             touristType: 'Nature Lovers, Wildlife Enthusiasts, Families',
             offers: [
-                { '@type': 'Offer', name: 'Chilika Trip (Sedan + Boat)', price: '3199', priceCurrency: 'INR', description: 'Puri to Satapada AC cab + boat ride charges assistance. 10 hours.' },
-                { '@type': 'Offer', name: 'Chilika Trip (Innova Crysta + Boat)', price: '4199', priceCurrency: 'INR', description: 'Luxury SUV Puri to Satapada + boat ride. 10 hours.' },
+                { '@type': 'Offer', name: 'Chilika Trip (Sedan + Boat)', description: 'Puri to Satapada AC cab + boat ride assistance. 10 hours.' },
+                { '@type': 'Offer', name: 'Chilika Trip (Innova Crysta + Boat)', description: 'Luxury SUV Puri to Satapada + boat ride assistance. 10 hours.' },
             ],
         },
         {
@@ -82,7 +82,7 @@ const jsonLd = {
                 {
                     '@type': 'Question',
                     name: 'What is the boat ride cost at Chilika Lake Satapada?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Government-approved boat rides at Satapada start from ₹800–₹1,200 per boat (depending on the route — dolphin point, sea mouth, or Kalijai temple). We assist with booking government boats at fair prices.' },
+                    acceptedAnswer: { '@type': 'Answer', text: 'Government-approved boat rides are available at the Satapada jetty. We assist with booking government boats at fair prices. Please call or WhatsApp us for the latest boat and cab pricing details.' },
                 },
                 {
                     '@type': 'Question',
@@ -104,13 +104,13 @@ const highlights = [
 ];
 
 const itinerary = [
-    { time: '07:00', label: 'Pickup', title: 'Pickup from Puri Hotel', desc: 'Early start for the fresh morning air. Our AC cab takes you from Puri through scenic Odisha countryside to Satapada.' },
-    { time: '08:30', label: 'Arrival', title: 'Arrive at Satapada Jetty', desc: 'Reach the Satapada boat jetty — gateway to Chilika Lake. Board a government-approved ferry with our assistance.' },
-    { time: '09:00', label: 'Dolphins', title: 'Dolphin Sighting Point', desc: 'Cruise to the famous Irrawaddy dolphin zone. Watch these gentle, rare freshwater dolphins swim alongside your boat. Pure magic.' },
-    { time: '10:30', label: 'Sea Mouth', title: 'Sea Mouth (Sipakuda)', desc: 'Visit the point where Chilika Lake meets the Bay of Bengal. Watch the dramatic confluence of calm lake water and ocean waves.' },
-    { time: '11:30', label: 'Temple', title: 'Kalijai Island Temple', desc: 'Visit the ancient Kalijai temple on a small island — only reachable by boat. Offer prayers and enjoy the serene island setting.' },
-    { time: '13:00', label: 'Lunch', title: 'Fresh Sea Food Lunch', desc: 'Enjoy fresh Chilika prawns, crabs, and fish at a local dhaba by the lakeside — a true Odisha coastal experience.' },
-    { time: '15:00', label: 'Return', title: 'Return to Puri', desc: 'Head back to Puri or Bhubaneswar with memories of Asia\'s most beautiful lagoon and its amazing wildlife.' },
+    { label: 'Pickup', title: 'Pickup from Puri Hotel', desc: 'Early start for the fresh morning air. Our AC cab takes you from Puri through scenic Odisha countryside to Satapada.' },
+    { label: 'Arrival', title: 'Arrive at Satapada Jetty', desc: 'Reach the Satapada boat jetty — gateway to Chilika Lake. Board a government-approved ferry with our assistance.' },
+    { label: 'Dolphins', title: 'Dolphin Sighting Point', desc: 'Cruise to the famous Irrawaddy dolphin zone. Watch these gentle, rare freshwater dolphins swim alongside your boat. Pure magic.' },
+    { label: 'Sea Mouth', title: 'Sea Mouth (Sipakuda)', desc: 'Visit the point where Chilika Lake meets the Bay of Bengal. Watch the dramatic confluence of calm lake water and ocean waves.' },
+    { label: 'Temple', title: 'Kalijai Island Temple', desc: 'Visit the ancient Kalijai temple on a small island — only reachable by boat. Offer prayers and enjoy the serene island setting.' },
+    { label: 'Lunch', title: 'Fresh Sea Food Lunch', desc: 'Enjoy fresh Chilika prawns, crabs, and fish at a local dhaba by the lakeside — a true Odisha coastal experience.' },
+    { label: 'Return', title: 'Return to Puri', desc: "Head back to Puri or Bhubaneswar with memories of Asia's most beautiful lagoon and its amazing wildlife." },
 ];
 
 export default function ChilikaLakeTripPage() {
@@ -150,13 +150,19 @@ export default function ChilikaLakeTripPage() {
                             Sail across the shimmering waters of Chilika — see rare Irrawaddy dolphins, the mystical Sea Mouth, migratory birds, and the sacred Kalijai island temple.
                         </p>
                         <div className="flex flex-wrap gap-4 items-center">
-                            <a href="tel:+919876543210" className="px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest transition-colors shadow-xl" style={{ backgroundColor: '#0d9488', color: 'white' }}>
-                                Book Now — ₹3,199
+                            <a href="tel:+919876543210" className="px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest transition-colors shadow-xl flex items-center gap-2" style={{ backgroundColor: '#0d9488', color: 'white' }}>
+                                <span className="material-symbols-outlined text-sm">call</span>
+                                Call to Book
+                            </a>
+                            <a href="https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Chilika+Lake+Trip.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-full border border-white/30 text-white text-xs font-bold uppercase tracking-widest hover:border-teal-400 hover:text-teal-300 transition-all flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm">chat</span>
+                                WhatsApp Us
                             </a>
                             <div className="flex items-center gap-6 text-white/60 text-xs">
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-teal-400">schedule</span> Full Day</span>
-                                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-teal-400">sailing</span> Boat Included</span>
+                                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-teal-400">sailing</span> Boat Assistance</span>
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-teal-400">star</span> 4.9 Rating</span>
+                                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-teal-400">currency_rupee</span> Affordable Rates</span>
                             </div>
                         </div>
                     </div>
@@ -194,62 +200,63 @@ export default function ChilikaLakeTripPage() {
                             <div className="absolute left-[3px] top-4 bottom-4 w-[1px] bg-gradient-to-b from-teal-300 via-teal-400 to-transparent" />
                             {itinerary.map((step, i) => (
                                 <div key={i} className="relative pl-12 group">
-                                    <div className={`absolute -left-[4px] top-2 h-4 w-4 rounded-full border group-hover:scale-125 transition-transform duration-300 z-10`} style={{ backgroundColor: i % 2 === 0 ? 'white' : '#0d9488', borderColor: '#0d9488', boxShadow: '0 0 0 4px rgba(13,148,136,0.15)' }} />
-                                    <div className="flex flex-col md:flex-row gap-8 items-start">
-                                        <div className="md:w-24 flex-shrink-0 pt-1">
-                                            <time className="font-serif text-2xl text-navy-900 block">{step.time}</time>
-                                            <p className="text-[0.6rem] uppercase tracking-widest font-bold" style={{ color: '#0d9488' }}>{step.label}</p>
-                                        </div>
-                                        <div className="flex-1">
-                                            <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
-                                            <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
-                                        </div>
-                                    </div>
+                                    <div className="absolute -left-[4px] top-2 h-4 w-4 rounded-full border group-hover:scale-125 transition-transform duration-300 z-10" style={{ backgroundColor: i % 2 === 0 ? 'white' : '#0d9488', borderColor: '#0d9488', boxShadow: '0 0 0 4px rgba(13,148,136,0.15)' }} />
+                                    <p className="text-[0.6rem] uppercase tracking-widest font-bold mb-2" style={{ color: '#0d9488' }}>{step.label}</p>
+                                    <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
+                                    <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
 
-                {/* Pricing */}
+                {/* Book Your Tour */}
                 <section className="py-32 px-6 lg:px-12 bg-white">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-16">
-                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Transparent Pricing</h2>
-                            <p className="text-charcoal-500 font-light text-base">Cab fare included. Boat ride assistance included. No surprises.</p>
+                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Book Your Tour</h2>
+                            <p className="text-charcoal-500 font-light text-base">Choose your vehicle and contact us for a personalised quote.</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group">
+                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                                 <p className="text-[10px] text-charcoal-400 uppercase tracking-[0.2em] mb-1">Premium Sedan</p>
                                 <h3 className="text-2xl font-serif text-navy-900 mb-2">Dzire / Etios</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif text-navy-900">₹3,199</span>
-                                    <span className="text-charcoal-400 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600">
+                                <p className="text-sm font-semibold mb-8" style={{ color: '#0d9488' }}>Up to 4 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600 flex-grow">
                                     {['Up to 4 passengers', 'Puri–Satapada cab ride', 'Boat ride booking assistance', 'Dolphin + Sea Mouth + Kalijai', 'Experienced driver'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#0d9488' }} />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl border border-navy-900/10 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 group-hover:text-white transition-all text-center block" style={{}}>Select Plan</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-all text-center flex items-center justify-center gap-2" style={{ backgroundColor: '#0d9488' }}>
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Chilika+Lake+Trip+in+a+Sedan.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-charcoal-200 text-xs font-bold uppercase tracking-[0.15em] text-charcoal-600 hover:border-teal-400 hover:text-navy-900 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                             <div className="p-10 rounded-[2rem] shadow-2xl relative flex flex-col border" style={{ backgroundColor: '#042f2e', borderColor: '#134e4a' }}>
                                 <div className="absolute top-6 right-6"><span className="material-symbols-outlined" style={{ color: '#5eead4' }}>star</span></div>
                                 <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: 'rgba(94,234,212,0.7)' }}>Luxury SUV</p>
                                 <h3 className="text-2xl font-serif text-white mb-2">Innova Crysta</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif" style={{ color: '#5eead4' }}>₹4,199</span>
-                                    <span className="text-white/40 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-white/80">
+                                <p className="text-sm font-semibold mb-8" style={{ color: '#5eead4' }}>Up to 6 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-white/80 flex-grow">
                                     {['Up to 6 passengers', 'Puri–Satapada luxury cab', 'Priority boat booking assistance', 'Dolphin + Sea Mouth + Kalijai', 'Experienced driver', 'Bottled water included'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#5eead4' }} />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-colors shadow-lg text-center block" style={{ backgroundColor: '#0d9488' }}>Reserve Now</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-[0.15em] text-white hover:opacity-90 transition-colors shadow-lg text-center flex items-center justify-center gap-2" style={{ backgroundColor: '#0d9488' }}>
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Chilika+Lake+Trip+in+an+Innova+Crysta.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-white/20 text-xs font-bold uppercase tracking-[0.15em] text-white/70 hover:border-teal-400 hover:text-teal-300 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <p className="text-center text-xs text-charcoal-400 mt-8 font-light">* Boat ride charges (₹800–₹1,200/boat) are paid directly at Satapada jetty. We assist with booking.</p>
+                        <p className="text-center text-xs text-charcoal-400 mt-8 font-light">Boat ride is booked at the Satapada jetty — we assist with booking. Call or WhatsApp for complete trip details.</p>
                     </div>
                 </section>
 
@@ -284,9 +291,9 @@ export default function ChilikaLakeTripPage() {
                         </div>
                         <div className="grid md:grid-cols-3 gap-5">
                             {[
-                                { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', sub: 'Jagannath Temple', price: '₹1,800', num: '01' },
-                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', price: '₹2,200', num: '02' },
-                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Sightseeing', sub: 'Temple City of India', price: '₹1,500', num: '03' },
+                                { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', sub: 'Jagannath Temple', num: '01' },
+                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', num: '02' },
+                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Sightseeing', sub: 'Temple City of India', num: '03' },
                             ].map((t) => (
                                 <a key={t.href} href={t.href}
                                     className="group relative flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-champagne-400/40 transition-all duration-400 overflow-hidden">
@@ -296,7 +303,7 @@ export default function ChilikaLakeTripPage() {
                                         <h3 className="text-white font-serif text-xl leading-snug">{t.label}</h3>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-white/50 text-xs font-light">From <span className="text-champagne-400 font-semibold">{t.price}</span></span>
+                                        <span className="text-white/40 text-xs font-light">Enquire for pricing</span>
                                         <span className="material-symbols-outlined text-white/30 group-hover:text-champagne-400 text-base transition-colors">arrow_forward</span>
                                     </div>
                                 </a>

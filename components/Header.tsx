@@ -2,10 +2,10 @@
 import { useState, useEffect, useRef } from 'react';
 
 const destinations = [
-    { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', icon: 'temple_hindu', sub: 'From ₹1,800' },
-    { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', icon: 'wb_sunny', sub: 'From ₹2,200' },
-    { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', icon: 'water', sub: 'From ₹3,199' },
-    { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Tour', icon: 'fort', sub: 'From ₹1,500' },
+    { href: '/puri-darshan-tour', label: 'Puri Darshan Tour', icon: 'temple_hindu', sub: 'Jagannath Temple' },
+    { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', icon: 'wb_sunny', sub: 'UNESCO Heritage' },
+    { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', icon: 'water', sub: "Asia's Largest Lagoon" },
+    { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Tour', icon: 'fort', sub: 'Temple City of India' },
 ];
 
 export default function Header() {
@@ -80,8 +80,8 @@ export default function Header() {
                         )}
                     </div>
 
-                    <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widest uppercase transition-colors" href="/#gallery">Gallery</a>
-                    <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widests uppercase transition-colors" href="/#pricing">Pricing</a>
+                    <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widests uppercase transition-colors" href="/#gallery">Gallery</a>
+                    <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widests uppercase transition-colors" href="/#pricing">Packages</a>
                     <a
                         href="tel:+919876543210"
                         className="flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/30 px-6 py-2.5 text-xs font-bold text-white uppercase tracking-wider transition-all hover:bg-white hover:text-navy-900 cursor-pointer"
@@ -124,7 +124,7 @@ export default function Header() {
                             </a>
                         ))}
                         <a className="text-white/90 hover:text-champagne-400 text-sm font-medium tracking-widest uppercase py-3 border-b border-white/5" href="/#gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
-                        <a className="text-white/90 hover:text-champagne-400 text-sm font-medium tracking-widest uppercase py-3" href="/#pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+                        <a className="text-white/90 hover:text-champagne-400 text-sm font-medium tracking-widest uppercase py-3" href="/#pricing" onClick={() => setMobileMenuOpen(false)}>Packages</a>
                         <a href="tel:+919876543210" className="mt-4 w-full py-4 rounded-full bg-champagne-500 text-navy-900 text-xs font-bold uppercase tracking-widest text-center">Book Yatra</a>
                     </div>
                 </div>

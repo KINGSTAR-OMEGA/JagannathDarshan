@@ -42,23 +42,17 @@ const pageJsonLd = {
         {
           '@type': 'Offer',
           name: 'Puri Sightseeing – Single Day Spiritual Visit',
-          price: '1800',
-          priceCurrency: 'INR',
-          description: 'Temple Darshan, Beach Visit, Gundicha Temple. 8 Hours / 80 Kms. Premium Sedan.',
+          description: 'Temple Darshan, Beach Visit, Gundicha Temple. 8 Hours / 80 Kms. Premium Sedan or Luxury SUV.',
         },
         {
           '@type': 'Offer',
           name: 'Puri – Konark Tour – The Golden Triangle',
-          price: '2200',
-          priceCurrency: 'INR',
-          description: 'Jagannath Temple, Konark Sun Temple, Chandrabhaga Beach, Marine Drive. 10 Hours.',
+          description: 'Jagannath Temple, Konark Sun Temple, Chandrabhaga Beach, Marine Drive. 10 Hours. Sedan or SUV.',
         },
         {
           '@type': 'Offer',
           name: 'Chilika Lake Trip – Nature at Satapada',
-          price: '3199',
-          priceCurrency: 'INR',
-          description: 'Puri to Satapada, Dolphin Sighting Point, Sea Mouth, Boat Booking Assistance.',
+          description: 'Puri to Satapada, Dolphin Sighting Point, Sea Mouth, Boat Booking Assistance. Full day.',
         },
       ],
     },
@@ -78,7 +72,7 @@ const pageJsonLd = {
           name: 'What is the price for a Puri–Konark tour?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The Puri–Konark Golden Triangle tour starts at ₹2,200 per sedan for 10 hours, covering Jagannath Temple, Konark Sun Temple, Chandrabhaga Beach, and Marine Drive.',
+            text: 'Please call or WhatsApp us for the latest pricing on the Puri–Konark Golden Triangle tour. The tour covers Jagannath Temple, Konark Sun Temple, Chandrabhaga Beach, and Marine Drive over 10 hours with a premium AC cab.',
           },
         },
         {

@@ -4,7 +4,7 @@ const stats = [
     { value: '500+', label: 'Monthly Yatras' },
     { value: '4.9', label: 'Satisfaction Score' },
     { value: '24/7', label: 'Support' },
-    { value: '100%', label: 'Transparency' },
+    { value: 'Best', label: 'Value for Money' },
 ];
 
 const Features: React.FC = () => {
@@ -82,7 +82,7 @@ const Features: React.FC = () => {
                     </h2>
                     <p className="text-charcoal-600 text-lg font-light leading-relaxed mb-16 max-w-lg">
                         The journey to the Lord should be free of worldly worries. We ensure your travel is as pure
-                        as your intent. Our fleet is modern, our drivers are courteous devotees themselves.
+                        as your intent — with affordable rates, modern vehicles, and courteous driver-devotees at every step.
                     </p>
 
                     <div className="grid grid-cols-2 gap-x-12 gap-y-12">

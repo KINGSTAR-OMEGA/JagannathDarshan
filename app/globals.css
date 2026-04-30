@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@layer base {
+  /* Scale the entire site to match 80% browser zoom at 100% */
+  html {
+    font-size: 80%;
+  }
+}
+
 @theme {
   --color-navy-800: #1a2332;
   --color-navy-900: #0f172a;

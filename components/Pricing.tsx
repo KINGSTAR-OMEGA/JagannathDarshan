@@ -12,16 +12,16 @@ const sidePlans = [
     {
         name: 'Puri – Konark Tour',
         subtitle: 'THE GOLDEN TRIANGLE',
-        price: '₹2,200',
-        unit: '/ sedan',
+        badge: 'Sedan / SUV Available',
         features: ['Jagannath Temple', 'Konark Sun Temple', 'Chandrabhaga Beach', 'Marine Drive', '10 Hours Service'],
+        whatsapp: 'https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Puri-Konark+Golden+Triangle+Tour.+Please+share+availability+and+pricing.',
     },
     {
         name: 'Chilika Lake Trip',
         subtitle: 'NATURE AT SATAPADA',
-        price: '₹3,199',
-        unit: '/ sedan',
-        features: ['Puri to Satapada', 'Dolphin Sighting Point', 'Sea Mouth', 'Boat Booking Assistance'],
+        badge: 'Sedan / SUV Available',
+        features: ['Puri to Chilika', 'Dolphin Sighting Point', 'Sea Mouth', 'Boat Booking Assistance'],
+        whatsapp: 'https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Chilika+Lake+Trip.+Please+share+availability+and+pricing.',
     },
 ];
 
@@ -45,8 +45,8 @@ const Pricing: React.FC = () => {
         <section id="pricing" className="py-40 px-6 lg:px-12 bg-charcoal-50">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-24">
-                    <h2 className="text-4xl md:text-6xl font-serif text-navy-900 mb-6">Transparent Pricing</h2>
-                    <p className="text-charcoal-500 font-light text-lg">No hidden fees. Pure experience.</p>
+                    <h2 className="text-4xl md:text-6xl font-serif text-navy-900 mb-6">Book Your Journey</h2>
+                    <p className="text-charcoal-500 font-light text-lg max-w-xl mx-auto">Affordable rates, no hidden fees. Call or WhatsApp and get a personalised quote within minutes.</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 items-stretch">
@@ -54,24 +54,34 @@ const Pricing: React.FC = () => {
                     {/* LEFT — Puri Konark Tour */}
                     <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-champagne-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                         <h3 className="text-lg font-serif font-bold text-navy-900 mb-2">{sidePlans[0].name}</h3>
-                        <p className="text-charcoal-400 text-xs tracking-wide mb-10">{sidePlans[0].subtitle}</p>
-                        <div className="flex items-baseline gap-1 mb-10">
-                            <span className="text-4xl font-serif text-navy-900">{sidePlans[0].price}</span>
-                            <span className="text-charcoal-400 font-light text-sm">{sidePlans[0].unit}</span>
-                        </div>
+                        <p className="text-charcoal-400 text-xs tracking-wide mb-4">{sidePlans[0].subtitle}</p>
+                        <span className="inline-block mb-8 text-[0.65rem] font-bold uppercase tracking-[0.15em] text-champagne-600 bg-champagne-50 border border-champagne-200 px-3 py-1.5 rounded-full self-start">
+                            {sidePlans[0].badge}
+                        </span>
                         <ul className="space-y-5 mb-12 text-sm text-charcoal-600 font-medium tracking-wide flex-grow">
                             {sidePlans[0].features.map((f) => (
                                 <li key={f} className="flex items-center gap-4">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-champagne-500"></span> {f}
+                                    <span className="w-1.5 h-1.5 rounded-full bg-champagne-500 shrink-0"></span> {f}
                                 </li>
                             ))}
                         </ul>
-                        <a
-                            href="tel:+919876543210"
-                            className="w-full py-4 rounded-xl border border-navy-900/10 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 group-hover:bg-navy-900 group-hover:text-white transition-all text-center block"
-                        >
-                            Select Plan
-                        </a>
+                        <div className="flex flex-col gap-3">
+                            <a
+                                href="tel:+919876543210"
+                                className="w-full py-4 rounded-xl bg-navy-900 text-xs font-bold uppercase tracking-[0.15em] text-white hover:bg-navy-800 transition-all text-center flex items-center justify-center gap-2"
+                            >
+                                <span className="material-symbols-outlined text-sm">call</span>
+                                Call to Book
+                            </a>
+                            <a
+                                href={sidePlans[0].whatsapp}
+                                target="_blank" rel="noopener noreferrer"
+                                className="w-full py-3.5 rounded-xl border border-charcoal-200 text-xs font-bold uppercase tracking-[0.15em] text-charcoal-600 hover:border-champagne-400 hover:text-navy-900 transition-all text-center flex items-center justify-center gap-2"
+                            >
+                                <span className="material-symbols-outlined text-sm">chat</span>
+                                WhatsApp Us
+                            </a>
+                        </div>
                     </div>
 
                     {/* CENTRE — Custom Service Picker (featured) */}
@@ -122,36 +132,64 @@ const Pricing: React.FC = () => {
                         </ul>
 
                         <a
-                            href="/custom-booking"
-                            className="w-full py-4 rounded-xl bg-champagne-500 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 hover:bg-white transition-colors shadow-lg text-center block"
+                            href={whatsappLink()}
+                            target="_blank" rel="noopener noreferrer"
+                            className="w-full py-4 rounded-xl bg-champagne-500 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 hover:bg-white transition-colors shadow-lg text-center flex items-center justify-center gap-2"
                         >
-                            Plan My Custom Tour
+                            <span className="material-symbols-outlined text-sm">chat</span>
+                            WhatsApp for Quote
                         </a>
                     </div>
 
                     {/* RIGHT — Chilika Lake Trip */}
                     <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-champagne-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                         <h3 className="text-lg font-serif font-bold text-navy-900 mb-2">{sidePlans[1].name}</h3>
-                        <p className="text-charcoal-400 text-xs tracking-wide mb-10">{sidePlans[1].subtitle}</p>
-                        <div className="flex items-baseline gap-1 mb-10">
-                            <span className="text-4xl font-serif text-navy-900">{sidePlans[1].price}</span>
-                            <span className="text-charcoal-400 font-light text-sm">{sidePlans[1].unit}</span>
-                        </div>
+                        <p className="text-charcoal-400 text-xs tracking-wide mb-4">{sidePlans[1].subtitle}</p>
+                        <span className="inline-block mb-8 text-[0.65rem] font-bold uppercase tracking-[0.15em] text-champagne-600 bg-champagne-50 border border-champagne-200 px-3 py-1.5 rounded-full self-start">
+                            {sidePlans[1].badge}
+                        </span>
                         <ul className="space-y-5 mb-12 text-sm text-charcoal-600 font-medium tracking-wide flex-grow">
                             {sidePlans[1].features.map((f) => (
                                 <li key={f} className="flex items-center gap-4">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-champagne-500"></span> {f}
+                                    <span className="w-1.5 h-1.5 rounded-full bg-champagne-500 shrink-0"></span> {f}
                                 </li>
                             ))}
                         </ul>
-                        <a
-                            href="tel:+919876543210"
-                            className="w-full py-4 rounded-xl border border-navy-900/10 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 group-hover:bg-navy-900 group-hover:text-white transition-all text-center block"
-                        >
-                            Select Plan
-                        </a>
+                        <div className="flex flex-col gap-3">
+                            <a
+                                href="tel:+919876543210"
+                                className="w-full py-4 rounded-xl bg-navy-900 text-xs font-bold uppercase tracking-[0.15em] text-white hover:bg-navy-800 transition-all text-center flex items-center justify-center gap-2"
+                            >
+                                <span className="material-symbols-outlined text-sm">call</span>
+                                Call to Book
+                            </a>
+                            <a
+                                href={sidePlans[1].whatsapp}
+                                target="_blank" rel="noopener noreferrer"
+                                className="w-full py-3.5 rounded-xl border border-charcoal-200 text-xs font-bold uppercase tracking-[0.15em] text-charcoal-600 hover:border-champagne-400 hover:text-navy-900 transition-all text-center flex items-center justify-center gap-2"
+                            >
+                                <span className="material-symbols-outlined text-sm">chat</span>
+                                WhatsApp Us
+                            </a>
+                        </div>
                     </div>
 
+                </div>
+
+                {/* Trust strip */}
+                <div className="mt-16 flex flex-wrap justify-center gap-x-10 gap-y-4 text-xs text-charcoal-400 uppercase tracking-widest">
+                    {[
+                        { icon: 'currency_rupee', text: 'Affordable Rates' },
+                        { icon: 'receipt_long', text: 'No Hidden Charges' },
+                        { icon: 'verified', text: 'Best Value Guaranteed' },
+                        { icon: 'schedule', text: 'Flexible Timings' },
+                        { icon: 'support_agent', text: '24/7 Support' },
+                    ].map(({ icon, text }) => (
+                        <span key={text} className="flex items-center gap-2">
+                            <span className="material-symbols-outlined text-champagne-500 text-base">{icon}</span>
+                            {text}
+                        </span>
+                    ))}
                 </div>
             </div>
         </section>

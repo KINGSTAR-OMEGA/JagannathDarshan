@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.jagannathdarshan.in'),
     title: 'Puri Darshan Tour Package from Bhubaneswar | Jagannath Temple Sightseeing',
     description:
-        'Book the best Puri darshan tour package from Bhubaneswar. Visit Jagannath Temple, Gundicha Temple, Mata Matha, Bedi Hanuman Temple & Puri Beach. Premium AC cab, VIP darshan. Starting ₹1,800.',
+        'Book the best Puri darshan tour package from Bhubaneswar. Visit Jagannath Temple, Gundicha Temple, Mata Matha, Bedi Hanuman Temple & Puri Beach. Premium AC cab, VIP darshan assistance. Call or WhatsApp for best rates.',
     keywords: [
         'Puri darshan tour package',
         'Puri sightseeing from Bhubaneswar',
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
         siteName: 'Jagannath Darshan Tours',
         title: 'Puri Darshan Tour Package | Jagannath Temple Sightseeing from Bhubaneswar',
         description:
-            'Complete Puri local sightseeing — Jagannath Temple, Gundicha, Bedi Hanuman, Mata Matha & Puri Beach. VIP darshan access. Starting ₹1,800/sedan.',
+            'Complete Puri local sightseeing — Jagannath Temple, Gundicha, Bedi Hanuman, Mata Matha & Puri Beach. VIP darshan access. Call or WhatsApp for best rates.',
         images: [{ url: '/Web_Hero.webp', width: 1200, height: 630, alt: 'Puri Darshan Tour — Jagannath Temple Odisha' }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Puri Darshan Tour Package | Starting ₹1,800',
-        description: 'Jagannath Temple darshan + local Puri sightseeing. VIP access, premium AC cab from Bhubaneswar.',
+        title: 'Puri Darshan Tour Package | Jagannath Temple Sightseeing',
+        description: 'Jagannath Temple darshan + local Puri sightseeing. VIP access, premium AC cab from Bhubaneswar. Call or WhatsApp for rates.',
         images: ['/Web_Hero.webp'],
     },
 };
@@ -75,8 +75,8 @@ const jsonLd = {
                 ],
             },
             offers: [
-                { '@type': 'Offer', name: 'Premium Sedan (Dzire/Etios)', price: '1800', priceCurrency: 'INR', description: '8 hours / 80 km, AC sedan, experienced driver' },
-                { '@type': 'Offer', name: 'Luxury SUV (Innova Crysta)', price: '2800', priceCurrency: 'INR', description: '8 hours / 80 km, AC luxury SUV, experienced driver' },
+                { '@type': 'Offer', name: 'Premium Sedan (Dzire/Etios)', description: '8 hours / 80 km, AC sedan, experienced driver-cum-guide' },
+                { '@type': 'Offer', name: 'Luxury SUV (Innova Crysta)', description: '8 hours / 80 km, AC luxury SUV, experienced driver' },
             ],
         },
         {
@@ -90,7 +90,7 @@ const jsonLd = {
                 {
                     '@type': 'Question',
                     name: 'What is the price for Puri local sightseeing from Bhubaneswar?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Puri local sightseeing starts at ₹1,800 per sedan (Dzire/Etios) for up to 8 hours and 80 km. Innova Crysta (6-seater) is available at ₹2,800.' },
+                    acceptedAnswer: { '@type': 'Answer', text: 'Please call or WhatsApp us for the latest pricing on Puri local sightseeing. We offer premium sedan (Dzire/Etios) and luxury SUV (Innova Crysta) options for up to 8 hours and 80 km. Our team will share personalised rates based on your travel dates and group size.' },
                 },
                 {
                     '@type': 'Question',
@@ -117,13 +117,13 @@ const highlights = [
 ];
 
 const itinerary = [
-    { time: '07:00', label: 'Pickup', title: 'Hotel/Airport Pickup in Bhubaneswar', desc: 'Our driver greets you in a sanitized, premium AC cab. Comfortable 60 km drive to Puri with scenic views.' },
-    { time: '09:30', label: 'Temple', title: 'Jagannath Temple Darshan', desc: 'Arrive at the holy shrine for VIP assisted darshan of Lord Jagannath, Balabhadra, and Subhadra. Our local guide explains the rituals and history.' },
-    { time: '11:30', label: 'Temples', title: 'Gundicha & Omkareshwar', desc: 'Visit the sacred Gundicha Temple, then the ancient Omkareshwar Shiva temple for blessings.' },
-    { time: '13:00', label: 'Lunch', title: 'Mahaprasad at Anand Bazar', desc: 'Experience the divine Mahaprasad — the sacred food of Lord Jagannath served at the famous Ananda Bazar inside the temple complex.' },
-    { time: '14:30', label: 'Temples', title: 'Bedi Hanuman & Mata Matha', desc: 'See the unique chained Hanuman idol at Bedi Hanuman Temple and visit the revered Mata Matha monastery.' },
-    { time: '16:30', label: 'Beach', title: 'Puri Beach & Sunset', desc: 'Relax at the serene Puri Beach. Watch fishermen at work, collect sacred sand, and soak in the divine atmosphere at sunset.' },
-    { time: '18:00', label: 'Return', title: 'Drop-off in Bhubaneswar', desc: 'Comfortable drive back to your hotel in Bhubaneswar with cherished memories of a blessed day.' },
+    { label: 'Pickup', title: 'Hotel/Airport Pickup in Bhubaneswar', desc: 'Our driver greets you in a sanitized, premium AC cab. Comfortable 60 km drive to Puri with scenic views.' },
+    { label: 'Temple', title: 'Jagannath Temple Darshan', desc: 'Arrive at the holy shrine for VIP assisted darshan of Lord Jagannath, Balabhadra, and Subhadra. Our local guide explains the rituals and history.' },
+    { label: 'Temples', title: 'Gundicha & Omkareshwar', desc: 'Visit the sacred Gundicha Temple, then the ancient Omkareshwar Shiva temple for blessings.' },
+    { label: 'Lunch', title: 'Mahaprasad at Anand Bazar', desc: 'Experience the divine Mahaprasad — the sacred food of Lord Jagannath served at the famous Ananda Bazar inside the temple complex.' },
+    { label: 'Temples', title: 'Bedi Hanuman & Mata Matha', desc: 'See the unique chained Hanuman idol at Bedi Hanuman Temple and visit the revered Mata Matha monastery.' },
+    { label: 'Beach', title: 'Puri Beach & Sunset', desc: 'Relax at the serene Puri Beach. Watch fishermen at work, collect sacred sand, and soak in the divine atmosphere at sunset.' },
+    { label: 'Return', title: 'Drop-off in Bhubaneswar', desc: 'Comfortable drive back to your hotel in Bhubaneswar with cherished memories of a blessed day.' },
 ];
 
 export default function PuriDarshanTourPage() {
@@ -165,13 +165,19 @@ export default function PuriDarshanTourPage() {
                             Experience the divine grace of Lord Jagannath — one of India&apos;s four sacred Char Dhams. Full-day sightseeing with VIP darshan, Mahaprasad, and premium comfort.
                         </p>
                         <div className="flex flex-wrap gap-4 items-center">
-                            <a href="tel:+919876543210" className="bg-champagne-500 text-navy-900 px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-champagne-400 transition-colors shadow-xl">
-                                Book Now — ₹1,800
+                            <a href="tel:+919876543210" className="bg-champagne-500 text-navy-900 px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-champagne-400 transition-colors shadow-xl flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm">call</span>
+                                Call to Book
+                            </a>
+                            <a href="https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Puri+Darshan+Tour.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="border border-white/30 text-white px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:border-champagne-400 hover:text-champagne-400 transition-all flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm">chat</span>
+                                WhatsApp Us
                             </a>
                             <div className="flex items-center gap-6 text-white/60 text-xs">
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-champagne-400">schedule</span> 8 Hours</span>
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-champagne-400">route</span> 80 Kms</span>
                                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-champagne-400">star</span> 4.9 Rating</span>
+                                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-champagne-400">currency_rupee</span> Affordable Rates</span>
                             </div>
                         </div>
                     </div>
@@ -210,60 +216,62 @@ export default function PuriDarshanTourPage() {
                             {itinerary.map((step, i) => (
                                 <div key={i} className="relative pl-12 group">
                                     <div className={`absolute -left-[4px] top-2 h-4 w-4 rounded-full border shadow-[0_0_0_4px_rgba(212,175,55,0.1)] group-hover:scale-125 transition-transform duration-300 z-10 ${i % 2 === 0 ? 'bg-white border-champagne-400' : 'bg-navy-900 border-navy-900'}`} />
-                                    <div className="flex flex-col md:flex-row gap-8 items-start">
-                                        <div className="md:w-24 flex-shrink-0 pt-1">
-                                            <time className="font-serif text-2xl text-navy-900 block">{step.time}</time>
-                                            <p className="text-[0.6rem] text-champagne-600 uppercase tracking-widest font-bold">{step.label}</p>
-                                        </div>
-                                        <div className="flex-1">
-                                            <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
-                                            <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
-                                        </div>
-                                    </div>
+                                    <p className="text-[0.6rem] text-champagne-600 uppercase tracking-widest font-bold mb-2">{step.label}</p>
+                                    <h3 className="text-xl font-serif text-navy-900 mb-2">{step.title}</h3>
+                                    <p className="text-charcoal-500 text-sm font-light leading-relaxed">{step.desc}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
 
-                {/* Pricing */}
+                {/* Book Your Tour */}
                 <section className="py-32 px-6 lg:px-12 bg-white">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-16">
-                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Transparent Pricing</h2>
-                            <p className="text-charcoal-500 font-light text-base">No hidden fees. What you see is what you pay.</p>
+                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Book Your Tour</h2>
+                            <p className="text-charcoal-500 font-light text-base">Choose your vehicle and contact us for a personalised quote.</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-champagne-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group">
+                            <div className="bg-white p-10 rounded-[2rem] border border-charcoal-100 hover:border-champagne-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group flex flex-col">
                                 <p className="text-[10px] text-charcoal-400 uppercase tracking-[0.2em] mb-1">Premium Sedan</p>
                                 <h3 className="text-2xl font-serif text-navy-900 mb-2">Dzire / Etios</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif text-navy-900">₹1,800</span>
-                                    <span className="text-charcoal-400 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600">
+                                <p className="text-champagne-600 text-sm font-semibold mb-8">Up to 4 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-charcoal-600 flex-grow">
                                     {['Up to 4 passengers', '8 Hours / 80 Kms', 'Premium AC cab', 'Experienced driver', 'VIP darshan assistance'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-champagne-500 flex-shrink-0" />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl border border-navy-900/10 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 group-hover:bg-navy-900 group-hover:text-white transition-all text-center block">Select Plan</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl bg-navy-900 text-xs font-bold uppercase tracking-[0.15em] text-white hover:bg-navy-800 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Puri+Darshan+Tour+in+a+Sedan.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-charcoal-200 text-xs font-bold uppercase tracking-[0.15em] text-charcoal-600 hover:border-champagne-400 hover:text-navy-900 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                             <div className="bg-navy-900 p-10 rounded-[2rem] shadow-2xl relative flex flex-col border border-navy-800">
                                 <div className="absolute top-6 right-6"><span className="material-symbols-outlined text-champagne-400">star</span></div>
                                 <p className="text-[10px] text-champagne-400/70 uppercase tracking-[0.2em] mb-1">Luxury SUV</p>
                                 <h3 className="text-2xl font-serif text-white mb-2">Innova Crysta</h3>
-                                <div className="flex items-baseline gap-1 mb-8">
-                                    <span className="text-4xl font-serif text-champagne-400">₹2,800</span>
-                                    <span className="text-white/40 font-light text-sm">/ cab</span>
-                                </div>
-                                <ul className="space-y-4 mb-10 text-sm text-white/80">
+                                <p className="text-champagne-400 text-sm font-semibold mb-8">Up to 6 passengers</p>
+                                <ul className="space-y-4 mb-10 text-sm text-white/80 flex-grow">
                                     {['Up to 6 passengers', '8 Hours / 80 Kms', 'Luxury AC SUV', 'Experienced courteous driver', 'VIP darshan assistance', 'Bottled water included'].map(f => (
                                         <li key={f} className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-champagne-400 flex-shrink-0" />{f}</li>
                                     ))}
                                 </ul>
-                                <a href="tel:+919876543210" className="w-full py-4 rounded-xl bg-champagne-500 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 hover:bg-white transition-colors shadow-lg text-center block">Reserve Now</a>
+                                <div className="flex flex-col gap-3">
+                                    <a href="tel:+919876543210" className="w-full py-4 rounded-xl bg-champagne-500 text-xs font-bold uppercase tracking-[0.15em] text-navy-900 hover:bg-white transition-colors shadow-lg text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">call</span> Call to Book
+                                    </a>
+                                    <a href="https://wa.me/919876543210?text=Hi%2C+I+want+to+book+the+Puri+Darshan+Tour+in+an+Innova+Crysta.+Please+share+availability+and+pricing." target="_blank" rel="noopener noreferrer" className="w-full py-3.5 rounded-xl border border-white/20 text-xs font-bold uppercase tracking-[0.15em] text-white/70 hover:border-champagne-400 hover:text-champagne-400 transition-all text-center flex items-center justify-center gap-2">
+                                        <span className="material-symbols-outlined text-sm">chat</span> WhatsApp Us
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <p className="text-center text-xs text-charcoal-400 mt-8 font-light">Call or WhatsApp us for the best rates. We respond within minutes.</p>
                     </div>
                 </section>
 
@@ -298,9 +306,9 @@ export default function PuriDarshanTourPage() {
                         </div>
                         <div className="grid md:grid-cols-3 gap-5">
                             {[
-                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', price: '₹2,200', num: '01' },
-                                { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', sub: "Asia's Largest Lagoon", price: '₹3,199', num: '02' },
-                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Sightseeing', sub: 'Temple City of India', price: '₹1,500', num: '03' },
+                                { href: '/konark-sun-temple-tour', label: 'Konark Sun Temple', sub: 'UNESCO Heritage', num: '01' },
+                                { href: '/chilika-lake-trip', label: 'Chilika Lake Trip', sub: "Asia's Largest Lagoon", num: '02' },
+                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Sightseeing', sub: 'Temple City of India', num: '03' },
                             ].map((t) => (
                                 <a key={t.href} href={t.href}
                                     className="group relative flex flex-col justify-between p-8 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] hover:border-champagne-400/40 transition-all duration-400 overflow-hidden">
@@ -310,7 +318,7 @@ export default function PuriDarshanTourPage() {
                                         <h3 className="text-white font-serif text-xl leading-snug">{t.label}</h3>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-white/50 text-xs font-light">From <span className="text-champagne-400 font-semibold">{t.price}</span></span>
+                                        <span className="text-white/40 text-xs font-light">Enquire for pricing</span>
                                         <span className="material-symbols-outlined text-white/30 group-hover:text-champagne-400 text-base transition-colors">arrow_forward</span>
                                     </div>
                                 </a>

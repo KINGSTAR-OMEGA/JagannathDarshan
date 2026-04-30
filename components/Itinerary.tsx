@@ -19,61 +19,40 @@ const Itinerary: React.FC = () => {
                     {/* Timeline Item 1 */}
                     <div className="relative pl-12 md:pl-20 group">
                         <div className="absolute -left-[4px] top-2 h-4 w-4 rounded-full bg-white border border-champagne-400 shadow-[0_0_0_4px_rgba(212,175,55,0.1)] group-hover:scale-125 transition-transform duration-300 z-10"></div>
-                        <div className="flex flex-col md:flex-row gap-10 items-start">
-                            <div className="md:w-24 flex-shrink-0 pt-1">
-                                <time className="font-serif text-2xl text-navy-900 block" dateTime="08:00">08:00</time>
-                                <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold">Morning</p>
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-xl font-serif text-navy-900 mb-3">Divine Pickup</h3>
-                                <p className="text-charcoal-500 text-base font-light leading-relaxed">
-                                    Our driver greets you at your hotel/airport with a clean, AC car. A fresh start to a divine day.
-                                </p>
-                            </div>
-                        </div>
+                        <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold mb-2">Morning</p>
+                        <h3 className="text-xl font-serif text-navy-900 mb-3">Divine Pickup</h3>
+                        <p className="text-charcoal-500 text-base font-light leading-relaxed">
+                            Our driver greets you at your hotel/airport with a clean, AC car. A fresh start to a divine day.
+                        </p>
                     </div>
 
                     {/* Timeline Item 2 */}
                     <div className="relative pl-12 md:pl-20 group">
                         <div className="absolute -left-[4px] top-2 h-4 w-4 rounded-full bg-navy-900 border border-navy-900 shadow-[0_0_0_4px_rgba(15,23,42,0.1)] group-hover:scale-125 transition-transform duration-300 z-10"></div>
-                        <div className="flex flex-col md:flex-row gap-10 items-start">
-                            <div className="md:w-24 flex-shrink-0 pt-1">
-                                <time className="font-serif text-2xl text-navy-900 block" dateTime="10:00">10:00</time>
-                                <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold">Temple</p>
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-xl font-serif text-navy-900 mb-4">The Main Shrine</h3>
-                                <p className="text-charcoal-500 text-base font-light leading-relaxed mb-6">
-                                    Assisted entry to the temple. Our local guide explains the history while you soak in the spiritual energy.
-                                </p>
-                                <div className="relative overflow-hidden rounded-2xl shadow-lg border border-charcoal-100 h-56">
-                                    <Image
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7CvWXNMX8sZwJHgsT0474_XrA5vgELaAuM_kIG3DJsT8Od1JtOxJd3eLjLWGR5qRnYMEgB4Lj2P_s8PSIHq5QoR59bEDqTJ_AYx9-T-DnpGFSltu3hR--zgRYCVnNH2_8BGFTOi5l2rN2AHLKeR4KAGBGTYsBOQTB7OWDWh4Yj3RMn_FZvfY8HtpL5svDOBW6NBHUrUdsmPdSzF989y_6S8wvEMYQJEOay-JKgcslLfPevT9frAA6MeLGtkcF6YCxeIw7NwzpUA"
-                                        alt="Jagannath Temple Puri — Main Shrine Darshan"
-                                        fill
-                                        className="object-cover hover:scale-105 transition-transform duration-1000"
-                                        sizes="(max-width: 768px) 85vw, 40vw"
-                                    />
-                                </div>
-                            </div>
+                        <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold mb-2">Temple</p>
+                        <h3 className="text-xl font-serif text-navy-900 mb-4">The Main Shrine</h3>
+                        <p className="text-charcoal-500 text-base font-light leading-relaxed mb-6">
+                            Assisted entry to the temple. Our local guide explains the history while you soak in the spiritual energy.
+                        </p>
+                        <div className="relative overflow-hidden rounded-2xl shadow-lg border border-charcoal-100 h-56">
+                            <Image
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7CvWXNMX8sZwJHgsT0474_XrA5vgELaAuM_kIG3DJsT8Od1JtOxJd3eLjLWGR5qRnYMEgB4Lj2P_s8PSIHq5QoR59bEDqTJ_AYx9-T-DnpGFSltu3hR--zgRYCVnNH2_8BGFTOi5l2rN2AHLKeR4KAGBGTYsBOQTB7OWDWh4Yj3RMn_FZvfY8HtpL5svDOBW6NBHUrUdsmPdSzF989y_6S8wvEMYQJEOay-JKgcslLfPevT9frAA6MeLGtkcF6YCxeIw7NwzpUA"
+                                alt="Jagannath Temple Puri — Main Shrine Darshan"
+                                fill
+                                className="object-cover hover:scale-105 transition-transform duration-1000"
+                                sizes="(max-width: 768px) 85vw, 40vw"
+                            />
                         </div>
                     </div>
 
                     {/* Timeline Item 3 */}
                     <div className="relative pl-12 md:pl-20 group">
                         <div className="absolute -left-[4px] top-2 h-4 w-4 rounded-full bg-white border border-champagne-400 shadow-[0_0_0_4px_rgba(212,175,55,0.1)] group-hover:scale-125 transition-transform duration-300 z-10"></div>
-                        <div className="flex flex-col md:flex-row gap-10 items-start">
-                            <div className="md:w-24 flex-shrink-0 pt-1">
-                                <time className="font-serif text-2xl text-navy-900 block" dateTime="14:00">14:00</time>
-                                <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold">Afternoon</p>
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-xl font-serif text-navy-900 mb-3">Coastal Excursion</h3>
-                                <p className="text-charcoal-500 text-base font-light leading-relaxed">
-                                    Drive through the scenic marine drive to Konark Sun Temple or enjoy boating at Chilika Lake.
-                                </p>
-                            </div>
-                        </div>
+                        <p className="text-2xs text-champagne-600 uppercase tracking-widest font-bold mb-2">Afternoon</p>
+                        <h3 className="text-xl font-serif text-navy-900 mb-3">Coastal Excursion</h3>
+                        <p className="text-charcoal-500 text-base font-light leading-relaxed">
+                            Drive through the scenic marine drive to Konark Sun Temple or enjoy boating at Chilika Lake.
+                        </p>
                     </div>
 
                 </div>

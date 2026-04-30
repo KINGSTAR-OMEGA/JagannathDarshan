@@ -104,68 +104,6 @@ const vehicles = [
     { name: 'Mini Bus', seats: '26 Seater', type: 'Mini Bus', img: 'https://5.imimg.com/data5/SELLER/Default/2021/8/WB/FL/OE/134796498/26-seater-tempo-traveller.jpg', tag: 'Corporate / Schools', tagColor: '#475569' },
 ];
 
-const fareTables = [
-    {
-        title: 'Konark Sightseeing',
-        subtitle: 'Sun Temple + Chandrabhaga Beach',
-        rows: [
-            { vehicle: 'Dzire', capacity: '5 Seater', price: '₹1,400' },
-            { vehicle: 'Ertiga', capacity: '7 Seater', price: '₹1,800' },
-            { vehicle: 'Tavera', capacity: '10 Seater', price: '₹2,000' },
-            { vehicle: 'Tata Winger', capacity: '15 Seater', price: '₹3,000' },
-            { vehicle: 'Innova Crysta', capacity: '7 Seater', price: '₹3,000' },
-            { vehicle: 'Traveller', capacity: '26 Seater', price: '₹4,500' },
-        ],
-    },
-    {
-        title: 'Bhubaneswar Sightseeing',
-        subtitle: 'Lingaraj · Dhauli · Khandagiri · Zoo',
-        rows: [
-            { vehicle: 'Dzire', capacity: '5 Seater', price: '₹2,800' },
-            { vehicle: 'Ertiga', capacity: '7 Seater', price: '₹3,200' },
-            { vehicle: 'Tavera', capacity: '10 Seater', price: '₹3,800' },
-            { vehicle: 'Tata Winger', capacity: '15 Seater', price: '₹4,500' },
-            { vehicle: 'Innova Crysta', capacity: '7 Seater', price: '₹5,000' },
-            { vehicle: 'Traveller', capacity: '26 Seater', price: '₹8,000' },
-        ],
-    },
-    {
-        title: 'Konark + Dhauli + Lingaraj + Khandagiri + Udayagiri + Zoo',
-        subtitle: 'Full-Day Grand Tour',
-        rows: [
-            { vehicle: 'Dzire', capacity: '5 Seater', price: '₹1,600' },
-            { vehicle: 'Ertiga', capacity: '7 Seater', price: '₹2,000' },
-            { vehicle: 'Tavera', capacity: '10 Seater', price: '₹2,500' },
-            { vehicle: 'Tata Winger', capacity: '15 Seater', price: '₹2,800' },
-            { vehicle: 'Innova Crysta', capacity: '7 Seater', price: '₹3,000' },
-            { vehicle: 'Traveller', capacity: '26 Seater', price: '₹4,000' },
-        ],
-    },
-    {
-        title: 'Chilika Lake Trip',
-        subtitle: 'Puri → Satapada → Dolphins',
-        rows: [
-            { vehicle: 'Dzire', capacity: '5 Seater', price: '₹1,600' },
-            { vehicle: 'Ertiga', capacity: '7 Seater', price: '₹2,000' },
-            { vehicle: 'Tavera', capacity: '10 Seater', price: '₹2,500' },
-            { vehicle: 'Tata Winger', capacity: '15 Seater', price: '₹2,800' },
-            { vehicle: 'Innova Crysta', capacity: '7 Seater', price: '₹3,000' },
-            { vehicle: 'Traveller', capacity: '26 Seater', price: '₹4,000' },
-        ],
-    },
-    {
-        title: 'Bhubaneswar Pickup & Drop',
-        subtitle: 'Airport · Railway Station · Hotels',
-        rows: [
-            { vehicle: 'Dzire', capacity: '5 Seater', price: '₹2,000' },
-            { vehicle: 'Ertiga', capacity: '7 Seater', price: '₹2,200' },
-            { vehicle: 'Tavera', capacity: '10 Seater', price: '₹2,500' },
-            { vehicle: 'Tata Winger', capacity: '15 Seater', price: '₹3,500' },
-            { vehicle: 'Innova Crysta', capacity: '7 Seater', price: '₹3,500' },
-            { vehicle: 'Traveller', capacity: '26 Seater', price: '₹5,000' },
-        ],
-    },
-];
 
 /* ─── PAGE ─── */
 
@@ -203,7 +141,7 @@ export default function CustomBookingPage() {
                         </h1>
                         <p className="text-white/70 text-lg font-light max-w-2xl mb-10">
                             From sacred temples to dolphin lagoons — pick your destinations, choose your vehicle,
-                            and travel at your own pace. Fully transparent pricing, no hidden charges.
+                            and travel at your own pace. No hidden charges, ever.
                         </p>
                         <div className="flex flex-wrap gap-4 items-center">
                             <a href="tel:+919876543210" className="px-8 py-4 rounded-full bg-champagne-500 text-xs font-bold uppercase tracking-widest text-navy-900 hover:bg-white transition-colors shadow-xl">
@@ -220,6 +158,7 @@ export default function CustomBookingPage() {
                 <div className="bg-champagne-500 py-5 px-6">
                     <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-12 gap-y-3">
                         {[
+                            { icon: 'currency_rupee', text: 'Affordable Rates' },
                             { icon: 'ac_unit', text: 'AC & Non-AC Vehicles' },
                             { icon: 'verified_user', text: 'Experienced Drivers' },
                             { icon: 'receipt_long', text: 'No Hidden Charges' },
@@ -368,51 +307,30 @@ export default function CustomBookingPage() {
                     </div>
                 </section>
 
-                {/* ── FARE TABLES ── */}
+                {/* ── GET YOUR CUSTOM QUOTE ── */}
                 <section className="py-32 px-6 lg:px-12 bg-white">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="text-center mb-20">
-                            <p className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-champagne-500 mb-4">Transparent Pricing</p>
-                            <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-4">Fare Details</h2>
-                            <p className="text-charcoal-500 font-light text-base max-w-xl mx-auto">
-                                No hidden fees. Fixed rates per vehicle — split the cost with your group.
-                            </p>
+                    <div className="max-w-4xl mx-auto text-center">
+                        <p className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-champagne-500 mb-4">Personalised Pricing</p>
+                        <h2 className="text-4xl md:text-5xl font-serif text-navy-900 mb-6">Get Your Custom Quote</h2>
+                        <p className="text-charcoal-500 font-light text-base max-w-xl mx-auto mb-12">
+                            Pricing depends on your destinations, vehicle choice, group size, and travel date.
+                            Share your plan with us and get an instant, transparent quote — no hidden fees, ever.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                            <a href="tel:+919876543210" className="flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-navy-900 text-white text-xs font-bold uppercase tracking-widest hover:bg-navy-800 transition-colors shadow-xl">
+                                <span className="material-symbols-outlined text-base">call</span>
+                                Call Us Now
+                            </a>
+                            <a href="https://wa.me/919876543210?text=Hi%2C+I%27d+like+a+custom+quote+for+my+Odisha+tour.+Please+help+me+plan+my+trip." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-10 py-5 rounded-full border border-charcoal-200 text-navy-900 text-xs font-bold uppercase tracking-widest hover:border-champagne-400 hover:bg-champagne-50 transition-all">
+                                <span className="material-symbols-outlined text-base">chat</span>
+                                WhatsApp for Quote
+                            </a>
                         </div>
-
-                        <div className="grid md:grid-cols-2 gap-8">
-                            {fareTables.map((table) => (
-                                <div key={table.title} className="rounded-3xl border border-charcoal-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-400">
-                                    {/* Table header */}
-                                    <div className="bg-navy-900 px-8 py-6">
-                                        <h3 className="text-white font-serif text-lg leading-snug">{table.title}</h3>
-                                        <p className="text-champagne-400 text-xs mt-1">{table.subtitle}</p>
-                                    </div>
-                                    {/* Rows */}
-                                    <table className="w-full text-sm">
-                                        <thead>
-                                            <tr className="bg-charcoal-50 border-b border-charcoal-100">
-                                                <th className="text-left px-8 py-3 text-[0.65rem] font-bold uppercase tracking-widest text-charcoal-400">Vehicle</th>
-                                                <th className="text-left px-4 py-3 text-[0.65rem] font-bold uppercase tracking-widest text-charcoal-400">Capacity</th>
-                                                <th className="text-right px-8 py-3 text-[0.65rem] font-bold uppercase tracking-widest text-charcoal-400">Price</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {table.rows.map((row, i) => (
-                                                <tr key={row.vehicle} className={`border-b border-charcoal-50 hover:bg-champagne-500/5 transition-colors ${i === table.rows.length - 1 ? 'border-none' : ''}`}>
-                                                    <td className="px-8 py-4 font-semibold text-navy-900">{row.vehicle}</td>
-                                                    <td className="px-4 py-4 text-charcoal-500">{row.capacity}</td>
-                                                    <td className="px-8 py-4 text-right font-bold text-navy-900 font-serif text-base">{row.price}</td>
-                                                </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                    <div className="px-8 py-4 bg-charcoal-50 border-t border-charcoal-100">
-                                        <a href="tel:+919876543210" className="text-[0.65rem] font-bold uppercase tracking-widest text-champagne-500 hover:text-navy-900 transition-colors flex items-center gap-1.5">
-                                            <span className="material-symbols-outlined text-sm">call</span>
-                                            Book This Tour
-                                        </a>
-                                    </div>
-                                </div>
+                        <div className="flex flex-wrap justify-center gap-8 text-xs text-charcoal-400 uppercase tracking-widest">
+                            {['No Hidden Fees', 'Instant Response', 'Fixed Vehicle Rates', 'Flexible Timings'].map(tag => (
+                                <span key={tag} className="flex items-center gap-2">
+                                    <span className="w-1 h-1 rounded-full bg-champagne-400 inline-block" /> {tag}
+                                </span>
                             ))}
                         </div>
                     </div>
@@ -455,10 +373,10 @@ export default function CustomBookingPage() {
                         {/* Tour cards — light theme */}
                         <div className="grid md:grid-cols-4 gap-5">
                             {[
-                                { href: '/puri-darshan-tour', label: 'Puri Darshan', sub: 'Jagannath Temple', price: '₹1,800', num: '01' },
-                                { href: '/konark-sun-temple-tour', label: 'Konark Tour', sub: 'UNESCO Heritage', price: '₹2,200', num: '02' },
-                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar', sub: 'Temple City', price: '₹2,800', num: '03' },
-                                { href: '/chilika-lake-trip', label: 'Chilika Lake', sub: 'Dolphin Sighting', price: '₹3,199', num: '04' },
+                                { href: '/puri-darshan-tour', label: 'Puri Darshan', sub: 'Jagannath Temple', num: '01' },
+                                { href: '/konark-sun-temple-tour', label: 'Konark Tour', sub: 'UNESCO Heritage', num: '02' },
+                                { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar', sub: 'Temple City', num: '03' },
+                                { href: '/chilika-lake-trip', label: 'Chilika Lake', sub: 'Dolphin Sighting', num: '04' },
                             ].map((t) => (
                                 <a key={t.href} href={t.href}
                                     className="group relative flex flex-col justify-between p-7 rounded-2xl border border-charcoal-100 bg-charcoal-50 hover:bg-white hover:border-champagne-300 hover:shadow-xl transition-all duration-400 overflow-hidden">
@@ -468,7 +386,7 @@ export default function CustomBookingPage() {
                                         <h4 className="text-navy-900 font-serif text-lg">{t.label}</h4>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-charcoal-400 text-xs">From <span className="text-navy-900 font-semibold">{t.price}</span></span>
+                                        <span className="text-charcoal-400 text-xs">Enquire for pricing</span>
                                         <span className="material-symbols-outlined text-charcoal-300 group-hover:text-champagne-500 text-base transition-colors">arrow_forward</span>
                                     </div>
                                 </a>
