@@ -2,9 +2,11 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Story from '@/components/Story';
 import Features from '@/components/Features';
+import TempleGuide from '@/components/TempleGuide';
 import Konark from '@/components/Konark';
 import Itinerary from '@/components/Itinerary';
 import Gallery from '@/components/Gallery';
+import TravelServices from '@/components/TravelServices';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
@@ -126,7 +128,9 @@ export default function HomePage() {
         <Features />
         <Konark />
         <Itinerary />
+        <TempleGuide />
         <Gallery />
+        <TravelServices />
         <Pricing />
         <Testimonials />
       </main>

@@ -8,11 +8,18 @@ const destinations = [
     { href: '/bhubaneswar-sightseeing', label: 'Bhubaneswar Tour', icon: 'fort', sub: 'Temple City of India' },
 ];
 
+const servicesOptions = [
+    { href: '/#temple-guide', label: 'Temple Panda', icon: 'diversity_1', sub: 'Official Priest Assistance' },
+    { href: '/#travel-services', label: 'Travel Bookings', icon: 'flight_takeoff', sub: 'Flights, Trains & Hotels' },
+];
+
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [destOpen, setDestOpen] = useState(false);
     const destRef = useRef<HTMLDivElement>(null);
+    const [servOpen, setServOpen] = useState(false);
+    const servRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -24,6 +31,9 @@ export default function Header() {
         const handleClick = (e: MouseEvent) => {
             if (destRef.current && !destRef.current.contains(e.target as Node)) {
                 setDestOpen(false);
+            }
+            if (servRef.current && !servRef.current.contains(e.target as Node)) {
+                setServOpen(false);
             }
         };
         document.addEventListener('mousedown', handleClick);
@@ -81,6 +91,38 @@ export default function Header() {
                     </div>
 
                     <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widests uppercase transition-colors" href="/#gallery">Gallery</a>
+                    
+                    {/* Services Dropdown */}
+                    <div className="relative" ref={servRef}>
+                        <button
+                            onClick={() => setServOpen(!servOpen)}
+                            className="flex items-center gap-1 text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widest uppercase transition-colors"
+                            aria-expanded={servOpen}
+                            aria-haspopup="true"
+                        >
+                            Services
+                            <span className={`material-symbols-outlined text-sm transition-transform duration-200 ${servOpen ? 'rotate-180' : ''}`}>expand_more</span>
+                        </button>
+                        {servOpen && (
+                            <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 w-64 bg-navy-900/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+                                {servicesOptions.map((s) => (
+                                    <a
+                                        key={s.href}
+                                        href={s.href}
+                                        onClick={() => setServOpen(false)}
+                                        className="flex items-center gap-3 px-5 py-4 hover:bg-white/10 transition-colors border-b border-white/5 last:border-0"
+                                    >
+                                        <span className="material-symbols-outlined text-champagne-400 text-lg flex-shrink-0">{s.icon}</span>
+                                        <div>
+                                            <p className="text-white text-xs font-semibold">{s.label}</p>
+                                            <p className="text-champagne-400 text-[0.6rem]">{s.sub}</p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
                     <a className="text-white/90 hover:text-champagne-400 text-xs font-medium tracking-widests uppercase transition-colors" href="/#pricing">Packages</a>
                     <a
                         href="tel:+919876543210"
@@ -124,6 +166,23 @@ export default function Header() {
                             </a>
                         ))}
                         <a className="text-white/90 hover:text-champagne-400 text-sm font-medium tracking-widest uppercase py-3 border-b border-white/5" href="/#gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
+                        
+                        <p className="text-champagne-400/60 text-[0.6rem] uppercase tracking-widest pt-4 pb-1 font-bold">Services</p>
+                        {servicesOptions.map((s) => (
+                            <a
+                                key={s.href}
+                                href={s.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="flex items-center gap-3 py-3 border-b border-white/5 hover:text-champagne-400 transition-colors"
+                            >
+                                <span className="material-symbols-outlined text-champagne-400 text-base">{s.icon}</span>
+                                <div>
+                                    <p className="text-white text-xs font-semibold">{s.label}</p>
+                                    <p className="text-champagne-400/70 text-[0.6rem]">{s.sub}</p>
+                                </div>
+                            </a>
+                        ))}
+
                         <a className="text-white/90 hover:text-champagne-400 text-sm font-medium tracking-widest uppercase py-3" href="/#pricing" onClick={() => setMobileMenuOpen(false)}>Packages</a>
                         <a href="tel:+919876543210" className="mt-4 w-full py-4 rounded-full bg-champagne-500 text-navy-900 text-xs font-bold uppercase tracking-widest text-center">Book Yatra</a>
                     </div>

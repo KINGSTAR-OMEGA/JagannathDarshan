@@ -13,7 +13,7 @@ const sidePlans = [
         name: 'Puri – Konark Tour',
         subtitle: 'THE GOLDEN TRIANGLE',
         badge: 'Sedan / SUV Available',
-        features: ['Jagannath Temple', 'Konark Sun Temple', 'Chandrabhaga Beach', 'Marine Drive', '10 Hours Service'],
+        features: ['Jagannath Temple Darshan', 'Official Panda Assistance', 'Konark Sun Temple', 'Chandrabhaga Beach', '10 Hours Service'],
         whatsapp: 'https://wa.me/919876543210?text=Hi%2C+I%27d+like+to+enquire+about+the+Puri-Konark+Golden+Triangle+Tour.+Please+share+availability+and+pricing.',
     },
     {
@@ -122,7 +122,8 @@ const Pricing: React.FC = () => {
                                 'Visit multiple places in a single trip',
                                 'Pick your ride — Sedan, SUV or Mini Van',
                                 'Travel at your own time, no fixed schedule',
-                                'Add a local guide whenever you want',
+                                'Official Panda for Temple Darshan',
+                                'Add-on Flight & Train Ticket Booking',
                             ].map((point) => (
                                 <li key={point} className="flex items-center gap-4">
                                     <span className="w-1.5 h-1.5 rounded-full bg-champagne-400 shrink-0"></span>
@@ -183,6 +184,7 @@ const Pricing: React.FC = () => {
                         { icon: 'receipt_long', text: 'No Hidden Charges' },
                         { icon: 'verified', text: 'Best Value Guaranteed' },
                         { icon: 'schedule', text: 'Flexible Timings' },
+                        { icon: 'flight_takeoff', text: 'Flight & Train Assistance' },
                         { icon: 'support_agent', text: '24/7 Support' },
                     ].map(({ icon, text }) => (
                         <span key={text} className="flex items-center gap-2">

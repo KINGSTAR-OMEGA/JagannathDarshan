@@ -16,7 +16,7 @@ export default function Gallery() {
                         <Image
                             alt="Majestic Spires of Jagannath Temple Puri"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDud7E_9qNbfmARyO0X_kEh7uPOHr4KHfindqmWkv-C5NQwbPyMTV_jTt4xraw_uc2xGDCl7GrbljLPu078pKFtlfcTBSRkztyY5FuaNPMK7DiKBWB5ctBmycp7PjtS3kV52CxInt-p0ixbTHBHwbaQUcbF-dyyA9iUCAj-wTUaIh6968ck02GTtsoXFHVojxlcMEDfCPV-LWFqJD_-ajnKgYk1JIqptdc5S4m9l4a1tojAA9ynMEovN8fHvcuX7_zCi626pCexlA"
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Shri_Jagannath_temple.jpg"
                             width={400}
                             height={500}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -29,7 +29,7 @@ export default function Gallery() {
                         <Image
                             alt="Stone Artistry at Konark Sun Temple"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQSXXoKCPbb13_uKh0_MYZcYsiPaJ2n0MajmGhZO_hNaLKZOf0UoKEvT_WyH8HDsueMEZ-oCTBSlbHrQ_9gJCjqV5DgPy-Hg9TxEje8K0AOmjiRNAoUmmc5cA18UKwtN6WWAkv4f4AhiJBYKD8Bl0g7L0R_8DB5SxfDGwC-SHgMY1ei3U4vpzfGKCJGLf0-0uIYorEkwRQQrPiBkslyZyTKS6kM8_BF40UMLJx3tdtWQg5PFe9Z3JqO0bnpl5_2vTeghsZuin3Hg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg"
                             width={400}
                             height={600}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -51,7 +51,7 @@ export default function Gallery() {
                         <Image
                             alt="Chilika Lake Boating — Satapada Odisha"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb8a5K4Af98RQb08S9RD_4hSj9bySAK9270an42jpar6NX4ZAQCU8PB7Xk6S0Afv3CDXaYxCy-TTWufjE-8ekiJncT0OJCY58zCVGPn-rxGns2yJT43LnRxrs5osSbZh9tbeMWWVAmSRHAbqxMdjhGp_GQ1OWc-8gP-BVpWbUQVYCFowHS_FmC-BvD2CqOVjdspCG0tnMf8X-Pq4dhEBv3LrYma9h3kcdqgQd1MPbZUKM6BwRZlDndyq_wkhMjtTvgMn_PzMmp3w"
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg"
                             width={400}
                             height={500}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -64,7 +64,7 @@ export default function Gallery() {
                         <Image
                             alt="Golden Hour Sunset Puri Beach Odisha"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCH6UuEfTvTmsETxufZfcUEYOiVC3ajBhZ4fPVByy8tcki3-ko7e2st3vGD1tcctKkDV4RJI7reg-bd-VZJuNNMPvhl3U0OBvHJeBRu2XpWVmeBruZY6F_FfQL8FwEuTEUz5bhEAkwoE6TJJtG9G1i74WS98YR56SBuRw-88ywO5tLDzMk9JoTkAO1gCGFx55nRCBnvD5Nl-wQlTX3v_Rp9eXh1fpnEKkoQJDZmvUReinx0mE15BViMLuHui5iHTUSwfG5wNbVsA"
+                            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Puri_Sea_Beach_viewed_from_the_light_house.jpg"
                             width={400}
                             height={550}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -77,7 +77,7 @@ export default function Gallery() {
                         <Image
                             alt="Faith in Numbers — Devotees at Jagannath Puri"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGopyZb-_x1OcFnknauP6p2r1fY0gcfVHaDTPKOsNHdTuqNv8x7aKAS78bIkjG8NT5JzFl7WgqyatQSplXNYeOfIX7lSdI94hV74vFgv6xgwuC3fg-tOjouGpZs4LhnnKxgpO6iff1VkaBK1o5kaxK4CUXrRrsw-AFCaQ0Rq8FstwT0gySgoeRc9mP-fEhTxE98nSSaLsJlVaDmSGudLJ4W4WWSoSqRO08veaT96j7VcIaP8RXxfNnumIdxBMUoUl6X8WWfFQvyA"
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/20/Rath_Yatra_Puri_07-11027.jpg"
                             width={400}
                             height={500}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -97,7 +97,7 @@ export default function Gallery() {
                         <Image
                             alt="Premium AC Fleet Vehicle for Odisha tour"
                             className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgMgiDZ0K6cPYYZvTB3GfkxgO8y3t5YEemuKxhJgDB4zsWPc_jbeBiEowXXu7DcK3rpwFJOOQd6CpQ7IEACJ7LTrSxUkiEpmCPro-1RZk9RVZgO8O-41OuXmoqW9J590cEyoMPncvDvbLk61G4w85s1DXD_2QzCaQF1vN5W9kRSX_0Cf9hb3fVhPmwTvjsyAWwpE7Ti8o7vG7V82SSrYwCmdSZEnCZT4GhujIs2IFRqsm8wbx9wF3iSwckU52e62O267wV2Dc7Aw"
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/68/2022_Toyota_Kijang_Innova_2.4_G_GUN142R_%2820220302%29.jpg"
                             width={400}
                             height={520}
                             sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
