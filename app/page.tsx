@@ -125,12 +125,12 @@ export default function HomePage() {
       <main className="w-full flex-grow">
         <Hero />
         <Story />
+        <TravelServices />
         <Features />
         <Konark />
         <Itinerary />
         <TempleGuide />
         <Gallery />
-        <TravelServices />
         <Pricing />
         <Testimonials />
       </main>
